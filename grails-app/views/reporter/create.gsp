@@ -12,11 +12,11 @@
 </head>
 
 <body>
-<g:form method="post">
-    <label for="ReporterName"> Reporter Name</label>
-    <g:textField name="ReporterName" value=""></g:textField>
+<g:form method="post" controller="Reporter">
+    <label for="reporterName"> Reporter Name</label>
+    <g:textField name="reporterName" value=""></g:textField>
     <br/>
-    <g:actionSubmit value="create reporter" action="save"></g:actionSubmit>
+    <g:actionSubmit value="edit reporter" action="save"></g:actionSubmit>
 </g:form>
 
 </body>

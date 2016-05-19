@@ -8,8 +8,14 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <title></title>
+    <title>ArticleLogsheet</title>
 </head>
+<g:form method="post" controller="Reporter">
+    <label for="ReporterName"> Reporter Name</label>
+    <g:textField name="ReporterName" value="${reporter.reporterName}"></g:textField>
+    <br/>
+    <g:actionSubmit value="create reporter" action="update"></g:actionSubmit>
+</g:form>
 
 <body>
 

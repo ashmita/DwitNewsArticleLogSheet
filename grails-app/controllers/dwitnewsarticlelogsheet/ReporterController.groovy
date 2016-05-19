@@ -9,9 +9,15 @@ class ReporterController {
         render view:'create';
        // [reporterInstance: new Reporter(params)]
     }
+    def edit(){
+        def reporter=Reporter.get(params.id)
+        [reporter:reporter]
+    }
     def save(){
         def reporter=new Reporter(params)
         reporter.save();
         render "Reporter are saved successfully"
     }
+
+
 }
