@@ -1,7 +1,9 @@
 package dwitnewsarticlelogsheet
 
 class ArticlesController {
-    static scaffold=true;
+//    static scaffold=true;
+    static defaultAction = "create"
+
 
     def index() {}
     def create(){
@@ -11,8 +13,7 @@ class ArticlesController {
         //render params.postedBy
         //params.reporter=Reporter.findByReporterName(params.postedBy).id
         params.reporter=params.int('reporter')
-
-
+        params.editor=params.int('editor')
         def articles=new Articles(params)
         articles.save(failOnError: true);
         articles.save();

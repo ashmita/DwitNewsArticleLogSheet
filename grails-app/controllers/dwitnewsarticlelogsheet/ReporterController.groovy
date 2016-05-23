@@ -15,7 +15,7 @@ class ReporterController {
         [reporter:reporter]
     }
     def save(){
-        params.editor=params.int('editor')
+
         def reporter=new Reporter(params)
         reporter.save();
         render "Reporter are saved successfully"

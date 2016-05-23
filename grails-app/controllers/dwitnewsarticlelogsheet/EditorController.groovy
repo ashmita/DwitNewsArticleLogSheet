@@ -1,7 +1,9 @@
 package dwitnewsarticlelogsheet
 
 class EditorController {
-    static scaffold=true;
+    //static scaffold=true;
+    static defaultAction = "create"
+
 
     def index() {}
     def create(){
@@ -9,7 +11,9 @@ class EditorController {
     }
     def save(){
 
-        def editor= new Editor(params);
+        def editor= new Editor();
+        editor.properties = params
+
         editor.save();
         render("Editors are saved successfully");
 
