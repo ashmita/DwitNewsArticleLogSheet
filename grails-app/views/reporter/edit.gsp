@@ -7,6 +7,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
+<meta name="layout" content="main">
 <head>
     <title>ArticleLogsheet</title>
 </head>
@@ -15,10 +16,10 @@
 <body>
 
 <g:form method="post" controller="reporter">
-    <label for="ReporterName"> Reporter Name</label>
-    <g:textField name="ReporterName" value="${reporter.reporterName}"></g:textField>
+    <label for="reporterName"> Reporter Name</label>
+    <g:textField name="reporterName" value="${reporter.reporterName}"></g:textField>
     <br/>
-    <g:actionSubmit value="create reporter" action="update"></g:actionSubmit>
+    <g:actionSubmit value="edit reporter" action="update"></g:actionSubmit>
 </g:form>
 
 </body>

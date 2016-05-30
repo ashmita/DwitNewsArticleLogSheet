@@ -9,6 +9,16 @@ class EditorController {
     def create(){
         render view: 'create'
     }
+
+    def edit(){
+        def editor=Editor.get(params.id)
+        [editor:editor]
+    }
+    def update(){
+
+            def editor=Editor.get(params.id)  /// database
+            bindData(editor, params)
+    }
     def save(){
 
         def editor= new Editor();
