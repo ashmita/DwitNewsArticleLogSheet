@@ -5,7 +5,10 @@ class ArticlesController {
     static defaultAction = "create"
 
 
-    def index() {}
+    def index() {
+        def articles=Articles.findAll();
+        [articles: articles]
+    }
     def create(){
         render view:'create'
     }
@@ -23,5 +26,10 @@ class ArticlesController {
         def articles=Articles.get(params.id)
         [articles:articles]
 
+    }
+    def update(){
+
+        def editor=Editor.get(params.id)  /// database
+        bindData(editor, params)
     }
 }
