@@ -2,7 +2,7 @@ package dwitnewsarticlelogsheet
 
 class ReporterController {
     //static scaffold=true;
-    static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
+    //static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
     static defaultAction = "create"
 
     def index() { }
@@ -11,8 +11,14 @@ class ReporterController {
        // [reporterInstance: new Reporter(params)]
     }
     def edit(){
-        def reporter=Reporter.get(params.id)
+        def reporter=Reporter.get(params.id)  /// database
+
         [reporter:reporter]
+    }
+    def update(){
+        def reporter=Reporter.get(params.id)  /// database
+        bindData(reporter, params)
+
     }
     def save(){
 
