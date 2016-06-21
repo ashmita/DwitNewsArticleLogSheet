@@ -8,7 +8,9 @@
 <%@ page import="dwitnewsarticlelogsheet.Reporter" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <meta name="layout" content="main"/>
     <title> Article page</title>
+
 </head>
 
 <body>

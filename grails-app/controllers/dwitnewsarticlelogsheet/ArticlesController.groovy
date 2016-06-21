@@ -1,7 +1,7 @@
 package dwitnewsarticlelogsheet
 
 class ArticlesController {
-//    static scaffold=true;
+ static scaffold=true;
     static defaultAction = "create"
 
 
