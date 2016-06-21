@@ -21,6 +21,7 @@ class ArticlesController {
         articles.save(failOnError: true);
         articles.save();
         //render "Articles are saved successfully"
+        render (view:'index')
 
     }
     def edit(){

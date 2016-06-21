@@ -145,5 +145,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     '/editor/save': ['ROLE_ADMIN'],
     '/editor/index':   ['ROLE_ADMIN'],
     '/reporter/index':   ['ROLE_ADMIN'],
+    //'/articles/index':   ['ROLE_USER'],
+
 ]
 
