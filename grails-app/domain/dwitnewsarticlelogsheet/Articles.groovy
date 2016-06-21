@@ -7,5 +7,9 @@ class Articles {
     static belongsTo = [reporter:Reporter, editor:Editor];
 
     static constraints = {
+        articleName(blank:false, maxSize: 80 )
+        category(blank:false, maxSize: 50 )
+        postedBy(blank:false, maxSize:50  )
+
     }
 }
