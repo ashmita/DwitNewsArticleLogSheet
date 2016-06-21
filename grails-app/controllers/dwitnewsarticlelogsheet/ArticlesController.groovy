@@ -7,7 +7,7 @@ class ArticlesController {
 
     def index() {
         def articles=Articles.findAll();
-        [articles: articles]
+        render( view:'index', model:[articles: articles]);
     }
     def create(){
         render view:'create'
@@ -20,7 +20,8 @@ class ArticlesController {
         def articles=new Articles(params)
         articles.save(failOnError: true);
         articles.save();
-        render "Articles are saved successfully"
+        //render "Articles are saved successfully"
+
     }
     def edit(){
         def articles=Articles.get(params.id)

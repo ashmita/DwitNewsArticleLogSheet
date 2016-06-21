@@ -5,9 +5,11 @@
   Time: 10:31 PM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+
+<%@ page import="dwitnewsarticlelogsheet.Reporter" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <meta name="layout" content="main"/>
     <title> Edit Page-Editor</title>
 </head>
 

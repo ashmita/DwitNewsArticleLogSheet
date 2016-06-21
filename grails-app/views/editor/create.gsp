@@ -5,18 +5,20 @@
   Time: 8:51 PM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+
+<%@ page import="dwitnewsarticlelogsheet.Reporter" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
+    <meta name="layout" content="main"/>
     <title>Create Editors </title>
 </head>
 
 <body>
-<g:form method="post" controller="editor">
+<g:form method="post" controller="editor" action="save">
     <label for="editorName"> Editor Name</label>
     <g:textField name="editorName" value=""></g:textField>
     <br/>
-    <g:actionSubmit value="add editors" action="save"></g:actionSubmit>
+    <g:submitButton value="SAVE THESE" name="sub"></g:submitButton>
 </g:form>
 </body>
 </html>

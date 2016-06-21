@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<g:form method="post" controller="Articles">
+<g:form method="post" controller="Articles" action="save">
     <label for="articleName"> Article Name</label>
     <g:textField name="articleName" value=""></g:textField>
     <br/>
@@ -30,7 +30,7 @@
     <label for="editor"> Editor Name(id)</label>
     <g:select name="editor" from="${dwitnewsarticlelogsheet.Editor.list()}" optionKey="id" optionValue="editorName"/>
     </br>
-    <g:actionSubmit value="add reporter" action="save"></g:actionSubmit>
+    <g:submitButton value="SAVE THESE" name="sub"></g:submitButton>
 </g:form>
 
 </body>

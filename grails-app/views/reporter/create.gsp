@@ -5,19 +5,20 @@
   Time: 2:29 AM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="dwitnewsarticlelogsheet.Reporter" contentType="text/html;charset=UTF-8" %>
 <html>
-<meta name="layout" content="main">
+
 <head>
+    <meta name="layout" content="main"/>
     <title> Adding Reporters</title>
 </head>
 
 <body>
-<g:form method="post" controller="Reporter">
+<g:form method="post" controller="Reporter" action="save">
     <label for="reporterName"> Reporter Name</label>
     <g:textField name="reporterName" value=""></g:textField>
     <br/>
-    <g:actionSubmit value="create reporter" action="save"></g:actionSubmit>
+    <g:submitButton value="SAVE THESE" name="sub"></g:submitButton>
 </g:form>
 
 </body>
